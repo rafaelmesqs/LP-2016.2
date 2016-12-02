@@ -36,5 +36,4 @@ Leituras recomendadas:
 - https://emacsformacosx.com
 - https://learnxinyminutes.com/docs/racket/
 
-[[./alexandre.rademaker.jpg]]
 
