@@ -49,7 +49,7 @@ processo /recurso/; (2) /recursiva implementando um processo
 
 ** Exercício 4
 
-Modifique a função =most= apresentada abaixo em Common Lisp para que
+Modifique a função =most=, apresentada abaixo em Common Lisp, para que
 ela retorne os dois elementos com maior pontuação (score) de uma
 lista. A pontuação de cada elemento é defina pela função passada como
 primeiro argumento.
@@ -112,9 +112,9 @@ serem visitados.
 
 Vamos adaptar a função =generate= para fazer uma busca em largura ao
 invés de uma busca em profundidade. Na busca em largura, cada estado é
-tratado por vez e todos os etados gerados a partir deste são tratados
-em seguida. Apenas depois que todos estes novos estados serem
-considerados, então os estados seguintes a estes são derivados. Para
+tratado por vez e todos os etados alcançados a partir deste são
+tratados em seguida. Apenas depois que todos estes novos estados serem
+considerados, então os estados seguintes a estes são tratados. Para
 esta versão, vamos precisar representar explicitamente os estados como
 uma estrutura de dados:
 
@@ -188,7 +188,7 @@ usamos:
 (B C)
 #+END_EXAMPLE
 
-Usando a função:
+E a função principal se aplicada no grafo da figura retorna:
 
 #+BEGIN_EXAMPLE
 > (shortest-path 'a 'd min)
@@ -209,6 +209,7 @@ Desejamos a função tal que:
 > (longest-path 'a 'd min)
 (A B C D)
 #+END_EXAMPLE
+
 ** Opção 3 - Dilema do Prisioneiro
 
 Vide arquivo [[file:ps4prs.org]].
