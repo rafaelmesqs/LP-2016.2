@@ -12,6 +12,8 @@ Sites permitidos:
 - O último site é para envio dos arquivos. 
 - A submissão deve ser feita com um arquivo .rkt por exercício. Sendo
   os nomes =ex-P-X.rkt= onde =P= é a parte e =X= é o número.
+- Parte 1 é toda *obrigatória* e a parte 2 o aluno deve escolher uma
+  das opções para resolver.
 
 * Parte 1
 
