@@ -149,29 +149,29 @@ points won by the cooperating party when the other defects; and let
 other cooperates. Then the prisoner's dilemma situation is
 characterized by the following conditions:
 
-\(
+\[
 DC > CC > DD > CD \\
 CC > (DC + CD) / 2
-\)
+\]
 
 In the game matrix of table-2, we have:
 
-\(
+\[
 DC = 5 \\
 CC = 3 \\
 DD = 1 \\
 CD = 0
-\)
+\]
 
 so both conditions are met. In the Bonnie and Clyde story, by the way,
 you can verify that:
 
-\(
+\[
 DC = 0 \\
 CC = -1 \\
 DD = -10 \\
 CD = -20
-\)
+\]
 
 Again, these values satisfy the prisoner's dilemma conditions.
 
