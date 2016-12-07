@@ -2,7 +2,8 @@
 
 * Enunciado
 
-What would the interpreter print in response to evaluating each of the following expressions?
+What would the interpreter print in response to evaluating each of the
+following expressions?
 
 #+BEGIN_SRC scheme
 (list 'a 'b 'c)
@@ -18,23 +19,34 @@ What would the interpreter print in response to evaluating each of the following
 #+END_SRC
 
 * Solução
-Na primeira, o quotation fará com que os elementos a, b e c sejam tratados como caracteres, eles não vão ser avaliados. 
-Assim, o resultado será uma lista contendo os elementos a, b e c.
 
-Na segunda, o =list= interno irá listar o "conjunto de caracteres" determinado por george. Já o =list= externo irá listar
-a lista gerada pelo interno. Logo, o resultado será uma lista com a lista interna e vazio.
+Na primeira, o quotation fará com que os elementos a, b e c sejam
+tratados como caracteres, eles não vão ser avaliados.  Assim, o
+resultado será uma lista contendo os elementos a, b e c.
 
-Na terceira, pela definição de lista, o resultado será uma lista que contém a lista =(y1 y2)= e vazio.
+Na segunda, o =list= interno irá listar o "conjunto de caracteres"
+determinado por george. Já o =list= externo irá listar a lista gerada
+pelo interno. Logo, o resultado será uma lista com a lista interna e
+vazio.
 
-Na quarta, ainda pela definição de lista, o resultado será o =car= da lista gerada na resposta anterior.
+Na terceira, pela definição de lista, o resultado será uma lista que
+contém a lista =(y1 y2)= e vazio.
 
-Na quinta, a função =pair?= terá como resposta à pergunta um booleano. No caso, a pergunta é se a é par. Como a não é par, a resposta é falso.
+Na quarta, ainda pela definição de lista, o resultado será o =car= da
+lista gerada na resposta anterior.
 
-Na sexta e na sétima, a função =memq= analisa se o primeiro argumento (um símbolo) e o =car= do segundo argumento (uma lista) são iguais.
-Se a lista for vazia, retorna falso, se a condição de igualdade existir, retorna a lista, caso contrário, retorna trocando o segundo argumento
-pelo =cdr= da lista até ela se esgotar.
-Na sexta temos como resposta falso, pois ele toma como =car= a lista =(red shoes)=. 
-Já na sétima os elementos não estão divididos em listas, então temos como resposta a lista dada.
+Na quinta, a função =pair?= terá como resposta à pergunta um
+booleano. No caso, a pergunta é se a é par. Como a não é par, a
+resposta é falso.
+
+Na sexta e na sétima, a função =memq= analisa se o primeiro argumento
+(um símbolo) e o =car= do segundo argumento (uma lista) são iguais.
+Se a lista for vazia, retorna falso, se a condição de igualdade
+existir, retorna a lista, caso contrário, retorna trocando o segundo
+argumento pelo =cdr= da lista até ela se esgotar.  Na sexta temos como
+resposta falso, pois ele toma como =car= a lista =(red shoes)=.  Já na
+sétima os elementos não estão divididos em listas, então temos como
+resposta a lista dada.
 
 
 #+BEGIN_SRC scheme
@@ -45,7 +57,8 @@ Já na sétima os elementos não estão divididos em listas, então temos como r
 #+END_SRC
 
 As respostas estão ilustradas abaixo:
-#+BEGIN_SRC scheme
+
+#+BEGIN_EXAMPLE
 > (list 'a 'b 'c)
 '(a b c)
 > (list (list 'george))
@@ -60,4 +73,5 @@ As respostas estão ilustradas abaixo:
 #f
 > (memq 'red '(red shoes blue socks))
 '(red shoes blue socks)
-#+END_SRC
+#+END_EXAMPLE
+
