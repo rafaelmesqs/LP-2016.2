@@ -93,6 +93,7 @@ maior.
 12
 #+END_EXAMPLE
 
+
 * Parte 2
 
 Escolha uma das opções para resolver.
@@ -208,3 +209,7 @@ Desejamos a função tal que:
 > (longest-path 'a 'd min)
 (A B C D)
 #+END_EXAMPLE
+** Opção 3 - Dilema do Prisioneiro
+
+Vide arquivo [[file:ps4prs.org]].
+
