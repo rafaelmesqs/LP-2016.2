@@ -7,7 +7,11 @@ Sites permitidos:
 - https://github.com/arademaker/LP-2016.2
 - http://eclass.fgv.br 
 
-O último site é para envio dos arquivos. Um arquivo por exercício.
+*Atenção*, instruções específicas:
+
+- O último site é para envio dos arquivos. 
+- A submissão deve ser feita com um arquivo .rkt por exercício. Sendo
+  os nomes =ex-P-X.rkt= onde =P= é a parte e =X= é o número.
 
 * Parte 1
 
@@ -21,6 +25,8 @@ duas listas tradas como conjuntos.
 (a b c d)
 #+END_EXAMPLE
 
+Submeter o arquivo =ex-1-1.rkt=.
+
 ** Exercício 2
 
 Defina uma função que receba uma lista como entrada e retorne uma
@@ -32,6 +38,8 @@ usada para comparar quando dois elementos são iguais:
 > (occurrences '(a b a d a c d c a) equal?)
 ((a . 4) (c . 2) (d . 2) (b . 1))
 #+END_EXAMPLE
+
+Submeter no arquivo =ex-1-2.rkt=.
 
 ** Exercício 3
 
@@ -46,6 +54,8 @@ cada elemento somado a sua posição:
 Defina a função =pos+= de 3 formas: (1) /recursiva/ implementando um
 processo /recurso/; (2) /recursiva implementando um processo
 /interativo/; e (3) usando a função /map/.
+
+Submeter no arquivo =ex-1-3.rkt=.
 
 ** Exercício 4
 
@@ -74,6 +84,8 @@ primeiro argumento.
 3
 #+END_EXAMPLE
 
+Submeter no arquivo =ex-1-4.rkt=.
+
 ** Exercício 5
 
 Defina a função =max-so-far= que receba um argumento, um número, e
@@ -93,6 +105,7 @@ maior.
 12
 #+END_EXAMPLE
 
+Submeter no arquivo =ex-1-5.rkt=.
 
 * Parte 2
 
@@ -137,6 +150,8 @@ As funções mais gerais poderão ficar como:
 	(append (generate-next-states (car agenda) network)
 		(generate-next-states-list (cdr agenda) network))))
 #+END_SRC
+
+Submeter no arquivo =ex-2-1.rkt=.
 
 ** Opção 2 - Longest Path
 
@@ -210,7 +225,9 @@ Desejamos a função tal que:
 (A B C D)
 #+END_EXAMPLE
 
+Submeter no arquivo =ex-2-2.rkt=.
+
 ** Opção 3 - Dilema do Prisioneiro
 
-Vide arquivo [[file:ps4prs.org]].
-
+Vide arquivo [[file:ps4prs.org]]. Submeter respostas no arquivo
+=ex-2-3.rkt=, neste caso apenas o problema 5 é opcional.
